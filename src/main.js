@@ -1,7 +1,2 @@
-const modules = import.meta.glob('./js/*.js');
-
-for (const path in modules) {
-  modules[path]().then(module => {
-    console.log(`Loaded: ${path}`);
-  });
-}
+  const modules = import.meta.glob('./js/*.js', { eager: true });
+  console.log(modules);
