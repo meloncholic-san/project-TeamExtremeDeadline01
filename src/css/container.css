@@ -1,19 +1,57 @@
-/* Styles for Mobile devices
-.container {
-  min-width: 320px;
-  max-width: 375px;
-  margin: 0 auto;
-  padding: 0 16px;
+
+section {
+  width: 100%; /* За замовчуванням ширина секції займає весь екран */
 }
-/* Styles for Tablet devices */
-/* @media only screen and (min-width: 768px) {
-  .container {
-    max-width: 768px;
+
+.container {
+  margin: 0 auto; /* Центрування контейнера */
+}
+
+/* Медіа запит для мобільних пристроїв від 320px до 374px */
+@media screen and (max-width: 374px) {
+  section {
+    width: 375px; 
+    margin: 0 auto;
   }
-} */
-/* Styles for Desktop devices */
-/* @media only screen and (min-width: 1200px) {
+
   .container {
-    max-width: 1200px;
+    width: 344px; 
   }
-} */
+
+}
+
+/* Медіа запит для мобільних пристроїв від 375px */
+@media screen and (min-width: 375px) {
+  section {
+    width: 100%; 
+  }
+
+  .container {
+    width: 344px; 
+  }
+}
+
+/* Медіа запит для планшетів (від 768px) */
+@media screen and (min-width: 768px) {
+  section {
+    width: 768px; 
+    margin: 0 auto; 
+  }
+
+  .container {
+    width: 704px; 
+  }
+}
+
+/* Медіа запит для десктопів (від 1440px) */
+@media screen and (min-width: 1440px) {
+  section {
+    width: 1440px; 
+    margin: 0 auto; 
+  }
+
+  .container {
+    width: 1376px; 
+  }
+
+}
