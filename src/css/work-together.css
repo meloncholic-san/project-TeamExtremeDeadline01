@@ -21,6 +21,16 @@
   transition: 200ms ease;
 }
 
+.logo-title-container {
+
+}
+
+.img-logo {
+
+}
+
+
+
 .title-work-together {
   font-family: "Inter Tight", sans-serif;
   font-weight: 500;
@@ -35,6 +45,18 @@
   color: #ed3b44;
 }
 
+.footer-form {
+
+}
+
+.footer-form-label {
+
+}
+
+.footer-form-input {
+
+}
+
 .footer-btn-send {
   width: 150px;
   height: 150px;
@@ -46,6 +68,22 @@ color: #fafafa;
   border-radius: 100%;
   border: none;
   background-color: #ed3b44;
+}
+
+.contacts {
+
+}
+
+.footer-list-contacts {
+
+}
+
+.footer-item-contacts {
+
+}
+
+.footer-link {
+  
 }
 
 .modal-window {
