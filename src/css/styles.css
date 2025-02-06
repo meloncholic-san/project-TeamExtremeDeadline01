@@ -5,6 +5,7 @@
   |============================
 */
 /* Common styles */
+@import url('./reset.css');
 @import url('./base.css');
 @import url('./container.css');
 
@@ -15,6 +16,6 @@
 @import url('./benefits.css');
 @import url('./covers.css');
 @import url('./faq.css');
-@import url('./projects.css');
+@import url('./projects.css'); 
 @import url('./reviews.css'); */
 @import url('./work-together.css');
