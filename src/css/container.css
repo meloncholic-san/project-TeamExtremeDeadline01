@@ -1,15 +1,15 @@
 
-section {
+section, footer {
   width: 100%; /* За замовчуванням ширина секції займає весь екран */
+  padding-left: 16px;
+  padding-right: 16px;
+  margin: 0 auto;
 }
 
-.container {
-  margin: 0 auto; /* Центрування контейнера */
-}
 
 /* Медіа запит для мобільних пристроїв від 320px до 374px */
 @media screen and (max-width: 374px) {
-  section {
+  section, footer {
     width: 375px; 
     margin: 0 auto;
   }
@@ -22,9 +22,9 @@ section {
 
 /* Медіа запит для мобільних пристроїв від 375px */
 @media screen and (min-width: 375px) {
-  section {
+  /* section {
     width: 100%; 
-  }
+  } */
 
   .container {
     width: 344px; 
@@ -33,10 +33,10 @@ section {
 
 /* Медіа запит для планшетів (від 768px) */
 @media screen and (min-width: 768px) {
-  section {
+  /* section {
     width: 768px; 
     margin: 0 auto; 
-  }
+  } */
 
   .container {
     width: 704px; 
@@ -45,10 +45,10 @@ section {
 
 /* Медіа запит для десктопів (від 1440px) */
 @media screen and (min-width: 1440px) {
-  section {
+  /* section {
     width: 1440px; 
     margin: 0 auto; 
-  }
+  } */
 
   .container {
     width: 1376px; 
