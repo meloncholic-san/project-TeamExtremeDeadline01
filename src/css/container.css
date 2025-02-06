@@ -1,5 +1,5 @@
 
-section {
+section, footer {
   width: 100%; /* За замовчуванням ширина секції займає весь екран */
   padding-left: 16px;
   padding-right: 16px;
@@ -9,7 +9,7 @@ section {
 
 /* Медіа запит для мобільних пристроїв від 320px до 374px */
 @media screen and (max-width: 374px) {
-  section {
+  section, footer {
     width: 375px; 
     margin: 0 auto;
   }
