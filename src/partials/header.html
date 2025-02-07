@@ -1,2 +1,32 @@
 <header class="header">
+  <div class="header-container">
+    <div class="header-logo">
+      <img
+        class="header-logo-img"
+        srcset="
+          ./img/header/jefferson.webp    1x,
+          ./img/header/jefferson@2x.webp 2x
+        "
+        src="../img/header/jefferson.webp"
+        alt="jefferson"
+      />
+
+      <p class="header-logo-text">jefferson*</p>
+    </div>
+
+    <div class="header-menu">
+      <button class="header-menu-btn">Menu</button>
+      <nav class="header-menu-list">
+        <a href="#about-me" class="header-menu-link">About me</a>
+        <a href="#benefits" class="header-menu-link">Benefits</a>
+        <a href="#projects" class="header-menu-link">Projects</a>
+        <a href="#faq" class="header-menu-link">FAQ</a>
+      </nav>
+    </div>
+    <a href="#work-together" class="header-btn-order">Order the project</a>
+
+    <svg class="header-menu-img">
+      <use href="../img/icons/icon-sprite.svg#icon-menu-05"></use>
+    </svg>
+  </div>
 </header>
