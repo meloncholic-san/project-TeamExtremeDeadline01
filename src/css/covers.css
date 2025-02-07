@@ -1,0 +1,54 @@
+.section-covers {
+    background-image: url(../img/covers/covers-background.webp);
+    
+
+}
+
+@media screen and (min-resolution: 192dpi) {
+    .section-covers {
+        background-image: url(../img/covers/covers-background@2x.webp);
+    }
+}
+
+
+
+.container-covers {
+    overflow: hidden;
+    max-height: 508px;
+}
+
+
+
+
+.covers-gallery {
+    transform: rotate(17deg);
+}
+
+
+.covers-list {
+    display: flex;
+    columns: 4;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+    
+    animation-name: coversAnim;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes coversAnim {
+    from {
+      transform: translateX(0%);
+    }
+    
+    to {
+      transform: translateX(-100%);
+    }
+  }
+
+.covers-item img {
+    width: 290px;
+    height: 163px;
+    object-fit: cover;
+}
