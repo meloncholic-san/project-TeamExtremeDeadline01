@@ -25,6 +25,9 @@
 
 .faq-list {
     width: 100%;
+   display: grid;
+  grid-template-columns: 1fr; 
+    
 }
 
 .faq-link {
@@ -75,11 +78,6 @@
     background: transparent;
 }
 
-.faq-icon {
-    width: 20px;
-    height: 20px;
-    color: #FAFAFA;
-}
 .faq-icon {
     width: 20px;
     height: 20px;
@@ -152,6 +150,22 @@
         display: flex;
         flex-direction: column;
     }
+    
+    .faq-link:nth-child(1) { order: 2; } /* faq1 */
+    .faq-link:nth-child(2) { order: 4; } /* faq2 */
+    .faq-link:nth-child(3) { order: 5; } /* faq3 */
+    .faq-link:nth-child(4) { order: 3; } /* faq4 */
+    .faq-link:nth-child(5) { order: 6; } /* faq5 */
+    .faq-link:nth-child(6) { order: 1; } /* faq6 */
+
+    .faq-link:last-child {
+        border-bottom: none;
+    }
+
+    .faq-link:nth-child(1) {
+        border-bottom: 1px solid rgba(250, 250, 250, 0.4);
+    }
+    
 }
 
 @media (min-width: 1440px) {
@@ -164,7 +178,18 @@
     .faq-list {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+            "faq3 faq2"
+            "faq1 faq4"
+            "faq5 faq6";
     }
+
+    .faq-link:nth-child(1) { grid-area: faq1; }
+    .faq-link:nth-child(2) { grid-area: faq2; }
+    .faq-link:nth-child(3) { grid-area: faq3; }
+    .faq-link:nth-child(4) { grid-area: faq4; }
+    .faq-link:nth-child(5) { grid-area: faq5; }
+    .faq-link:nth-child(6) { grid-area: faq6; }
     .faq-link {
         border-bottom: none;
     }
@@ -174,6 +199,9 @@
       .faq-link:nth-child(5) {
           border-bottom: 1px solid rgba(250, 250, 250, 0.4);
       }
+      .faq-link:last-child {
+        border-bottom: 1px solid rgba(250, 250, 250, 0.4);
+    }
       .faq-link:nth-child(odd) {
           padding-right: 32px;
       }
