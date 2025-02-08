@@ -5,6 +5,12 @@ import Swiper from "swiper";
 import "swiper/css";
 import "swiper/css/navigation";
 
+import { getData } from "./api";
+
+const swiperSlides = document.querySelectorAll(".reviews-swiper-slide");
+
+console.log(swiperSlides)
+
   // Ініціалізація reviews-swiper
   const reviewsSwiper = new Swiper(".reviews-swiper", {
     slidesPerView: 3,
@@ -18,3 +24,18 @@ import "swiper/css/navigation";
   });
 
   
+  getData()
+  .then ((response) => {
+    const slidesData = response;
+    console.log(slidesData);
+    swiperSlides.forEach((slide, index) => {
+
+
+    })
+  } 
+  
+)
+
+
+
+
