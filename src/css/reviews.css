@@ -1,0 +1,62 @@
+.reviews-swiper {
+    width: 100%;
+    overflow: hidden; /* Обрізає зайвий контент */
+    position: relative; /* Щоб кнопки були відносно контейнера */
+}
+
+.reviews-swiper-wrapper {
+    display: flex; 
+    transition: transform 0.3s ease-in-out; 
+    will-change: transform;
+    width: 100%;
+  }
+  
+  .reviews-swiper-slide {
+    flex-shrink: 0; 
+    width: 100%; 
+  }
+  
+
+.reviews-swiper-nav-buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+[data-swiper-id="2"].swiper-button-prev {
+
+    position: relative;
+    border: 1px solid #FAFAFA80;
+    border-radius: 60px;
+    padding: 18px;
+    width: 68px;
+    height: 68px;
+
+  }
+  
+  [data-swiper-id="2"].swiper-button-next {
+    position: relative;
+    border: 1px solid #FAFAFA80;
+    border-radius: 60px;
+    padding: 18px;
+    /* left: 100px; ////////////! */
+    left: 100px;
+    width: 68px;
+    height: 68px;
+  }
+
+  [data-swiper-id="2"].swiper-button-prev::after,
+  [data-swiper-id="2"].swiper-button-next::after {
+      display: none; /* Прибираємо дефолтні іконки */
+  }
+
+.review-swiper-prev-icon,
+.review-swiper-next-icon {
+    width: 32px;  
+    height: 32px; 
+    fill: currentColor; 
+    z-index: 1000; 
+    fill: white;
+    display: block;
+    position: absolute;
+}
