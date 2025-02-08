@@ -1,4 +1,5 @@
 
+
 .all-div {
     margin-top: 32px;
     height: auto;
@@ -83,7 +84,7 @@
 .bth-project:focus {
     background-color: #e0373f;
 }
-.swiper-container {
+.unique-swiper-container {
     background-color: #242527;
     border-radius: 0 0 24px 24px;
     height: auto;
@@ -97,7 +98,7 @@
     gap: 12px;
 }
 
-.swiper-button-prev {
+.unique-swiper-button-prev {
     border: 1px solid rgba(250, 250, 250, 0.5);
     border-radius: 60px;
     padding: 14px;
@@ -111,7 +112,7 @@
     transition: transform 250ms linear;
 }
 
-.swiper-button-next {
+.unique-swiper-button-next {
     border: 1px solid rgba(250, 250, 250, 0.5);
     border-radius: 60px;
     padding: 14px;
@@ -124,8 +125,8 @@
     transform: scale(1);
     transition: transform 250ms linear;
 }
-.swiper-button-prev:hover,
-.swiper-button-next:hover {
+.unique-swiper-button-prev:hover,
+.unique-swiper-button-next:hover {
     border: 1px solid #fafafa;
     transform: scale(1.04);
 }
@@ -138,7 +139,7 @@
     fill: transparent;
     stroke: white;
 }
-.swiper-slide {
+.unique-swiper-slide {
     width: 100%;
     display: flex !important;
     align-items: center;
@@ -148,8 +149,8 @@
     width: 100%;
 }
 
-.swiper-button-prev:disabled,
-.swiper-button-next:disabled {
+.unique-swiper-button-prev:disabled,
+.unique-swiper-button-next:disabled {
     cursor: not-allowed;
     opacity: 0.5;
 }
@@ -201,7 +202,7 @@
         gap: 20px;
     }
 
-    .swiper-slide {
+    .unique-swiper-slide {
         flex-direction: column;
     }
 
@@ -218,13 +219,13 @@
         padding: 120px 24px;
     }
 
-    .swiper-button-prev {
+    .unique-swiper-button-prev {
         padding: 18px;
         width: 68px;
         height: 68px;
     }
 
-    .swiper-button-next {
+    .unique-swiper-button-next {
         padding: 18px;
         width: 68px;
         height: 68px;
@@ -271,7 +272,7 @@
         height: 55px;
     }
 
-    .swiper-container {
+    .unique-swiper-container {
         width: 100%;
         height: auto;
         min-height: 100%;
@@ -286,35 +287,35 @@
         margin-top: 64px;
         gap: 20px;
     }
-    .swiper-button-prev {
+    .unique-swiper-button-prev {
         padding: 18px;
         width: 68px;
         height: 68px;
     }
-    .swiper-button-next {
+    .unique-swiper-button-next {
         padding: 18px;
         width: 68px;
         height: 68px;
     }
 
-    .swiper-container,
+    .unique-swiper-container,
     .div-list-p {
         min-height: auto;
         height: 625px;
     }
 
-    .swiper-slide {
+    .unique-swiper-slide {
         opacity: 0;
         flex-direction: row;
         transition: opacity 0.3s ease;
     }
 }
 
-.swiper-container {
+.unique-swiper-container {
     overflow: hidden;
 }
 
-.swiper-wrapper {
+.unique-swiper-wrapper {
     display: flex;
     transition: transform 0.3s ease;
 }
@@ -322,3 +323,7 @@
 .swiper-slide-active {
     opacity: 1;
 }
+
+
+
+

@@ -3,7 +3,7 @@ import 'swiper/css';
 import Swiper from 'swiper';
 import { Navigation, Keyboard, Mousewheel } from 'swiper/modules';
 
-const swiper = new Swiper('.swiper-container', {
+const swiper = new Swiper('.uniqu-swiper-container', {
   modules: [Navigation, Keyboard, Mousewheel],
   speed: 800,
   slidesPerView: 1,
@@ -11,8 +11,8 @@ const swiper = new Swiper('.swiper-container', {
   loop: false,
 
   navigation: {
-    nextEl: '.swiper-button-next[data-swiper-id="1"]',
-    prevEl: '.swiper-button-prev[data-swiper-id="1"]',
+    nextEl: '.unique-swiper-button-next[data-swiper-id="1"]',
+    prevEl: '.unique-swiper-button-prev[data-swiper-id="1"]',
   },
 
   keyboard: {
@@ -25,10 +25,10 @@ const swiper = new Swiper('.swiper-container', {
   on: {
     slideChange: function () {
       const prevButton = document.querySelector(
-        '.swiper-button-prev[data-swiper-id="1"]'
+        '.unique-swiper-button-prev[data-swiper-id="1"]'
       );
       const nextButton = document.querySelector(
-        '.swiper-button-next[data-swiper-id="1"]'
+        '.unique-swiper-button-next[data-swiper-id="1"]'
       );
 
       prevButton.disabled = swiper.isBeginning;
