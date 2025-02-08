@@ -1,9 +1,5 @@
 .footer {
-<<<<<<< Updated upstream
   min-width: 375px;
-=======
-  padding: 0 16px;
->>>>>>> Stashed changes
   background-color: #1c1d20;
   background-image: url(../img/work-together-retina/bg-glass-effect-mobile.jpg);
   background-repeat: no-repeat;
@@ -15,19 +11,10 @@
   margin: 0 auto;
 }
 
-<<<<<<< Updated upstream
 @media screen and (max-width: 767px) and (min-resolution: 192dpi) {
   .footer {
     background-image: url(../img/work-together-retina/bg-glass-effect-mobile@2x.jpg);
   }
-=======
-.container {
-  
-}
-
-.footer-link {
-  position: relative;
->>>>>>> Stashed changes
 }
 
 .logo-title-container {
@@ -36,18 +23,8 @@
   gap: 8px;
 }
 
-<<<<<<< Updated upstream
 .title-work-together {
   font-size: 40px;
-=======
-.img-logo {
-
-}
-
-.title-work-together {
-
-  font-size: 64px;
->>>>>>> Stashed changes
   line-height: 1;
   letter-spacing: -0.03em;
   text-transform: uppercase;
@@ -104,15 +81,8 @@
 }
 
 .footer-btn-send {
-<<<<<<< Updated upstream
   width: 100px;
   height: 100px;
-=======
-  width: 150px;
-  height: 150px;
-  letter-spacing: -0.02em;
-  color: #fafafa;
->>>>>>> Stashed changes
   border-radius: 100%;
   border: none;
   background-color: #ed3b44;
