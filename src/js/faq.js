@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const iconUse = button.querySelector("use");
         if (iconUse) {
             const newIcon = isOpen ? "icon-IconUp" : "icon-IconDown";
-            iconUse.outerHTML = `<use href="../img/icons/icon-sprite.svg#${newIcon}"></use>`;
+            iconUse.outerHTML = `<use href="./img/icons/icon-sprite.svg#${newIcon}"></use>`;
         }
     }
 
