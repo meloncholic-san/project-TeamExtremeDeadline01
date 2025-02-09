@@ -107,9 +107,9 @@
 }
 
 /* Styles for Desktop devices */
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 768px) {
     .container-benefits {
-        display: flex;
+        /* display: flex; */
         max-width: 1440px;
     }
 
@@ -120,5 +120,10 @@
 
     .benefits-frame-content {
         width: 332px;
+    }
+}
+@media only screen and (min-width: 1440px) {
+    .container-benefits{
+        display: flex;
     }
 }
