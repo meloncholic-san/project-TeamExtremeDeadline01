@@ -1,9 +1,7 @@
-
-console.log("About-me script loaded!");
-
 import Accordion from 'accordion-js';
 import sprite from '../img/icons/icon-sprite.svg';
 
+import Swiper from 'swiper';
 
 document.addEventListener('DOMContentLoaded', function () {
   new Accordion('.about-list', {
@@ -67,4 +65,3 @@ const slider = new Swiper('.swiper-skills-container', {
 });
 
 console.log('Slider: ', slider);
-
