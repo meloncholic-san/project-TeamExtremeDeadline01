@@ -1,4 +1,5 @@
 console.log("FAQ script loaded!");
+import sprite from "../img/icons/icon-sprite.svg"; 
 
 import Accordion from "accordion-js";
 import "accordion-js/dist/accordion.min.css";
