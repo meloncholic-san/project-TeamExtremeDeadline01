@@ -1,25 +1,33 @@
 
-section, footer {
-  width: 100%;
+section {
+  width: 375px;
   display: flex;
   justify-content: center; 
+  padding-left: 16px;
+  padding-right: 16px;
+  margin: 0 auto;
 }
 
 .container{
-  padding-left: 16px;
-  padding-right: 16px;
+  width: 344px;
 }
 /* Медіа запит для мобільних пристроїв від 320px до 374px */
 @media screen and (max-width: 374px) {
-
+  section {
+  max-width: 375px; 
+  }
   .container {
-    width: 344px; 
+    width: 100%; 
+    max-width: 344px;
   }
 
 }
 
 /* Медіа запит для мобільних пристроїв від 375px */
 @media screen and (min-width: 375px) {
+  section {
+    width: 375px;
+  }
   .container {
     width: 344px; 
   }
@@ -27,21 +35,25 @@ section, footer {
 
 /* Медіа запит для планшетів (від 768px) */
 @media screen and (min-width: 768px) {
-
-  .container {
-    width: 704px; 
+  section {
+    width: 768px;
     padding-left: 32px;
     padding-right: 32px;
+  }
+  .container {
+    width: 704px; 
   }
 }
 
 /* Медіа запит для десктопів (від 1440px) */
 @media screen and (min-width: 1440px) {
-
-  .container {
-    width: 1376px; 
+  section {
+    width: 1440px;
     padding-left: 32px;
     padding-right: 32px;
+  }
+  .container {
+    width: 1376px; 
   }
 
 }
