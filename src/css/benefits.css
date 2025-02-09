@@ -2,6 +2,9 @@
     padding-bottom: 64px;
     background-color: #1c1d20;
 }
+.benefits{
+    margin-bottom: 96px;
+}
 
 .benefits-header {
     font-family: 'Inter Tight', sans-serif;
@@ -95,7 +98,7 @@
 
 /* Styles for Tablet devices */
 @media only screen and (min-width: 768px) {
-    .container {
+    .container-benefits {
         padding: 0 32px;
     }
 
@@ -107,9 +110,9 @@
 }
 
 /* Styles for Desktop devices */
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 768px) {
     .container-benefits {
-        display: flex;
+        /* display: flex; */
         max-width: 1440px;
     }
 
@@ -120,5 +123,10 @@
 
     .benefits-frame-content {
         width: 332px;
+    }
+}
+@media only screen and (min-width: 1440px) {
+    .container-benefits{
+        display: flex;
     }
 }

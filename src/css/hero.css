@@ -63,8 +63,7 @@
   .section-hero {
     padding-top: 300px;
     background-image: url('../img/hero/bg_hero_tab.png');
-    margin-bottom: 64px;
-    width: 100%;
+    max-width: 768px;
   }
 
   @media (min-resolution: 192dpi) {
@@ -95,6 +94,7 @@
 @media (min-width: 1440px) {
   .section-hero {
     background-image: url('../img/hero/bg_hero.png');
+    max-width: 1440px;
   }
 
   @media (min-resolution: 192dpi) {

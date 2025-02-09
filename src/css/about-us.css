@@ -1,3 +1,5 @@
+/* @import 'swiper/swiper-bundle.css'; */
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -16,7 +18,11 @@
   flex-direction: column;
   justify-content: space-between;
   gap: 32px;
-  padding: 64px 0;
+  padding-top: 64px;
+  padding-bottom: 64px;
+  transition: all 0.3s ease;
+  /* height: auto;
+  align-items: center; */
 }
 
 .about-intro {
@@ -112,7 +118,7 @@
   display: flex;
   justify-content: space-between;
   align-items: start;
-  /* margin-top: 32px; */
+  margin-bottom: 10px;
 }
 
 .about-list-item-title {
@@ -123,9 +129,18 @@
 }
 
 .about-list-content {
+  max-height: 0;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
-  padding: 10px 0;
+  gap: 10px;
+  transition: max-height 0.4s ease, padding 0.4s ease;
+}
+
+.about-list-item.is-active .about-list-content {
+  max-height: 500px;
+  padding: 0;
+  margin-bottom: 10px;
 }
 
 .about-list-item:nth-of-type(1) .about-list-content {
@@ -164,24 +179,77 @@
 @media screen and (min-width: 768px) {
   .about-section .container {
     gap: 64px;
-    padding: 64px 0;
+  }
+
+  .about-list-item:nth-of-type(1) .about-list-content {
+    gap: 16px;
+
   }
 }
 
 @media screen and (min-width: 1440px) {
   .about-section .container {
     gap: 96px;
-    padding: 96px 0;
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+
+  .about-list-item:nth-of-type(1) .about-list-content {
+    gap: 32px;
   }
 
   .about-list-item-description {
     margin-left: 50%;
+    /* word-wrap: break-word; */
+    width: 612px;
   }
+
+  .about-list-item:nth-of-type(3) .about-list-item-description {
+    width: 425px;
+  }
+
 }
+
+
+.swiper-skills-container {
+  display: flex;
+  justify-content: space-between;
+  /* gap: 20px; */
+  align-self: flex-start;
+  max-width: 100%;
+  /* overflow: hidden; */
+  /* flex-shrink: 0; */
+  width: auto;
+  position: relative;
+
+}
+
+/* 
+@media screen and (min-width: 375px) {
+  .swiper-container {
+    min-width: 260px;
+  }
+} */
 
 .skills-list {
   display: flex;
+  justify-content: flex-start;
   overflow: hidden;
+  /* width: 80%; */
+  flex-shrink: 0;
+  width: auto;
+  max-width: 100%;
+  flex-grow: 1;
+
+}
+
+@media screen and (min-width: 1440px) {
+  .skills-list {
+    width: 100%;
+    /* Уникайте розтягування списку */
+    justify-content: flex-start;
+    /* Слайди починаються з лівого краю */
+  }
 }
 
 .skills-list-item {
@@ -200,20 +268,25 @@
   cursor: pointer;
   background-color: transparent;
   border: 1px solid rgba(250, 250, 250, 0.2);
-  flex-shrink: 0;
+  flex-shrink: 0 !important;
 }
 
 /* Перший елемент (червоний фон за замовчуванням) */
-.skills-list-item:nth-of-type(1) {
+/* .skills-list-item:nth-of-type(1) {
+  background-color: #ED3B44;
+  border: none;
+} */
+
+.about-section .swiper-slide-active {
   background-color: #ED3B44;
   border: none;
 }
 
-
+/* .skills-list-item:active,
 .skills-list-item:hover {
   background-color: #ED3B44;
   border: none;
-}
+} */
 
 @media screen and (min-width: 768px) {
   .skills-list-item {
@@ -225,7 +298,48 @@
 }
 
 @media screen and (min-width: 1440px) {
-  .skills-list {
+  .swiper-skills-container {
     padding: 0 32px;
   }
+}
+
+/* .skills-slider-btn {
+  display: inline-block;
+} */
+
+.skills-slider-btn {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  z-index: 10;
+  transition: all 0.3s ease;
+}
+
+/* SVG стрілка всередині кнопки */
+.skills-slider-btn .swiper-pagination {
+  width: 28px;
+  height: 28px;
+  fill: rgba(255, 255, 255, 0.4);
+}
+
+/* Ховер-ефект для кнопки */
+.skills-slider-btn:hover {
+  /* Червоний фон при наведенні */
+  transform: translateY(-50%) scale(1.1);
+  /* Збільшення кнопки при ховері */
+}
+
+.skills-slider-btn:hover .swiper-pagination {
+  fill: #fff;
+  /* Стрілка залишається білою */
 }

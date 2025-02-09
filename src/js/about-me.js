@@ -64,4 +64,5 @@ const slider = new Swiper('.swiper-skills-container', {
   },
 });
 
+
 console.log('Slider: ', slider);
