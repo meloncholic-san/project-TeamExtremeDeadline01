@@ -1,0 +1,324 @@
+
+.all-div {
+    margin-top: 32px;
+    height: auto;
+    display: flex;
+    align-items: stretch;
+}
+
+.h2-project {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: rgba(250, 250, 250, 0.4);
+}
+
+.div-list-p {
+    display: flex;
+    flex-direction: column;
+    background-color: aliceblue;
+    padding: 32px 32px;
+    height: auto;
+    width: 100%;
+    border-radius: 24px 24px 0 0;
+}
+
+.tags-panel {
+    width: 279px;
+    height: 96px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    padding-bottom: 32px;
+}
+
+.tag {
+    border: 1px solid rgba(28, 29, 32, 0.2);
+    border-radius: 60px;
+    padding: 13px 18px;
+    width: auto;
+    height: 45px;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: -0.02em;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.p-project {
+    margin-top: 96px;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 117%;
+    letter-spacing: -0.03em;
+    color: black;
+}
+
+.bth-project {
+    border-radius: 60px;
+    padding: 13px 32px;
+    width: 141px;
+    height: 45px;
+    background-color: #ed3b44;
+    margin-top: 32px;
+
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: -0.02em;
+    color: #fafafa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bth-project:hover,
+.bth-project:focus {
+    background-color: #e0373f;
+}
+.swiper-container {
+    background-color: #242527;
+    border-radius: 0 0 24px 24px;
+    height: auto;
+}
+
+.nav-bth {
+    height: 52px;
+    margin-top: 32px;
+    justify-content: center;
+    display: flex;
+    gap: 12px;
+}
+
+.swiper-button-prev {
+    border: 1px solid rgba(250, 250, 250, 0.5);
+    border-radius: 60px;
+    padding: 14px;
+    width: 52px;
+    height: 52px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: scale(1);
+    transition: transform 250ms linear;
+}
+
+.swiper-button-next {
+    border: 1px solid rgba(250, 250, 250, 0.5);
+    border-radius: 60px;
+    padding: 14px;
+    width: 52px;
+    height: 52px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: scale(1);
+    transition: transform 250ms linear;
+}
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+    border: 1px solid #fafafa;
+    transform: scale(1.04);
+}
+
+.svg-one {
+    fill: transparent;
+    stroke: white;
+}
+.svg-two {
+    fill: transparent;
+    stroke: white;
+}
+.swiper-slide {
+    width: 100%;
+    display: flex !important;
+    align-items: center;
+    flex-direction: column;
+}
+.img-project {
+    width: 100%;
+}
+
+.swiper-button-prev:disabled,
+.swiper-button-next:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
+.swiper-button-disabled {
+    opacity: 0.3;
+    pointer-events: none;
+}
+
+.project-pic {
+  
+    padding: 100px 16px;
+}
+
+@media (min-width: 768px) {
+    .tags-panel {
+        width: auto;
+        height: 55px;
+        display: flex;
+        gap: 6px;
+       
+        padding-bottom: 0;
+    }
+    .tag {
+        padding: 18px;
+        height: 55px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .p-project {
+        margin-top: 164px;
+        font-size: 44px;
+        line-height: 100%;
+        width: 494px;
+        height: auto;
+    }
+
+    .bth-project {
+        padding: 18px 50px;
+        width: 177px;
+        height: 55px;
+    }
+
+    .nav-bth {
+        height: 68px;
+        margin-top: 64px;
+        gap: 20px;
+    }
+
+    .swiper-slide {
+        flex-direction: column;
+    }
+
+    .div-list-p {
+        width: 100%;
+     
+        padding: 64px;
+    }
+
+    .project-pic {
+        height: 625px;
+        display: flex;
+        align-items: center;
+        padding: 120px 24px;
+    }
+
+    .swiper-button-prev {
+        padding: 18px;
+        width: 68px;
+        height: 68px;
+    }
+
+    .swiper-button-next {
+        padding: 18px;
+        width: 68px;
+        height: 68px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .div-list-p {
+        width: 50%;
+        border-radius: 24px 0 0 24px;
+       
+        height: auto;
+    }
+    .project-pic {
+        padding-left: 37px;
+        padding-right: 37px;
+    }
+    .tags-panel {
+        width: auto;
+        height: 55px;
+
+        flex-wrap: nowrap;
+        gap: 6px;
+    }
+
+    .tag {
+        border: 1px solid rgba(28, 29, 32, 0.2);
+        border-radius: 60px;
+        padding: 18px;
+        width: auto;
+        height: 55px;
+    }
+    .p-project {
+        margin-top: 223px;
+        font-size: 44px;
+        line-height: 100%;
+        letter-spacing: -0.03em;
+        
+    }
+    .bth-project {
+        margin-top: 32px;
+        padding: 18px 50px;
+        width: 177px;
+        height: 55px;
+    }
+
+    .swiper-container {
+        width: 100%;
+        height: auto;
+        min-height: 100%;
+        border-radius: 0 24px 24px 0;
+    }
+    .img-project {
+        display: block;
+        height: auto;
+    }
+    .nav-bth {
+        height: 68px;
+        margin-top: 64px;
+        gap: 20px;
+    }
+    .swiper-button-prev {
+        padding: 18px;
+        width: 68px;
+        height: 68px;
+    }
+    .swiper-button-next {
+        padding: 18px;
+        width: 68px;
+        height: 68px;
+    }
+
+    .swiper-container,
+    .div-list-p {
+        min-height: auto;
+        height: 625px;
+    }
+
+    .swiper-slide {
+        opacity: 0;
+        flex-direction: row;
+        transition: opacity 0.3s ease;
+    }
+}
+
+.swiper-container {
+    overflow: hidden;
+}
+
+.swiper-wrapper {
+    display: flex;
+    transition: transform 0.3s ease;
+}
+
+.swiper-slide-active {
+    opacity: 1;
+}
