@@ -1,5 +1,6 @@
 .section-covers {
   background-image: url(../img/covers/covers-background.webp);
+  margin-bottom: 64px;
 }
 
 @media screen and (min-resolution: 192dpi) {
@@ -11,6 +12,7 @@
 .container-covers {
   overflow: hidden;
   max-height: 508px;
+  min-width: 368px;
 }
 
 .covers-gallery {
@@ -62,10 +64,14 @@
 }
 
 @media screen and (min-width: 768px) {
+  .section-covers {
+    margin-bottom: 96px;
+  }
   .container-covers {
     max-height: 960px;
     padding-left: 32px;
     padding-right: 32px;
+    min-width: 768px;
   }
   .covers-gallery {
     min-width: 2500px;
@@ -75,6 +81,9 @@
   }
   .covers-list {
     gap: 32px;
+  }
+  .covers-animation {
+    animation-duration: 60s;
   }
   @keyframes coversAnim {
     from {
@@ -86,13 +95,13 @@
     }
   }
   .covers-item:nth-child(5),
-.covers-item:nth-child(6),
-.covers-item:nth-child(7),
-.covers-item:nth-child(8),
-.covers-item:nth-child(13),
-.covers-item:nth-child(14),
-.covers-item:nth-child(15),
-.covers-item:nth-child(16)  {
+  .covers-item:nth-child(6),
+  .covers-item:nth-child(7),
+  .covers-item:nth-child(8),
+  .covers-item:nth-child(13),
+  .covers-item:nth-child(14),
+  .covers-item:nth-child(15),
+  .covers-item:nth-child(16) {
     transform: translateX(150px);
   }
   .covers-item img {
@@ -102,9 +111,20 @@
 }
 
 @media screen and (min-width: 1440px) {
+  .section-covers {
+    margin-bottom: 164px;
+  }
+  .container-covers {
+    min-width: 1440px;
+  }
+
   .covers-gallery {
     top: 0px;
     left: 0px;
+  }
+
+  .covers-animation {
+    animation-duration: 30s;
   }
 
   @keyframes coversAnim {
