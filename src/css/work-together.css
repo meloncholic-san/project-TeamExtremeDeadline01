@@ -6,8 +6,7 @@
   background-size: 25% 100%;
   background-position: right bottom;
   color: #fff;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding: 32px 16px;
   margin: 0 auto;
 }
 
@@ -139,6 +138,8 @@
 @media screen and (min-width: 768px) {
   .footer {
     padding-top: 80px;
+    padding-right: 32px;
+    padding-left: 32px;
     background-image: url(../img/work-together-retina/bg-glass-effect-tabl.jpg);
   }
 
@@ -200,7 +201,8 @@
 
 @media screen and (min-width: 1440px) {
   .footer {
-    padding: 80px 196px 169px;
+    padding-right: 196px;
+    padding-left: 196px;
     background-image: url(../img/work-together-retina/bg-glass-effect-desc.jpg);
   }
 
@@ -209,10 +211,6 @@
       background-image: url(../img/work-together-retina/bg-glass-effect-desc@2x.jpg);
     }
   }
-
-  /* .container {
-      padding: 80px 196px 169px;
-    } */
 
   .footer-form-input {
     max-width: 390px;
