@@ -212,6 +212,10 @@
     }
   }
 
+  .footer .container {
+    margin: 0 auto;
+  }
+
   .footer-form-input {
     max-width: 390px;
   }
@@ -244,7 +248,6 @@
 
 .footer-backdrop.is-open {
   opacity: 1;
-  /* display: flex; */
   visibility: visible;
   pointer-events: auto;
 }
