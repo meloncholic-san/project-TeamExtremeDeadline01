@@ -1,7 +1,41 @@
+.reviews-section {
+  margin-bottom: 164px;
+}
+.reviews-header {
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: -2%;
+  color: #FAFAFA66;
+  margin-bottom: 32px;
+}
+
+
+.review-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 10px;
+  margin-bottom: 32px;
+}
+
+.review-avatar-name {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: -2%;
+  margin-bottom: 8px;
+}
+
+.review-review {
+  line-height: 24px;
+  letter-spacing: -2%;
+  color: #FAFAFA99;
+}
+
+
 .reviews-swiper {
     width: 100%;
-    overflow: hidden; /* Обрізає зайвий контент */
-    position: relative; /* Щоб кнопки були відносно контейнера */
+    overflow: hidden; 
+    position: relative;
 }
 
 .reviews-swiper-wrapper {
@@ -13,7 +47,12 @@
   
   .reviews-swiper-slide {
     flex-shrink: 0; 
-    width: 100%; 
+    width: 344px;
+    border-radius: 20px;
+    padding: 32px 24px;
+    border-width: 1px;
+    border: 1px solid #FAFAFA33;
+
   }
   
 
@@ -21,33 +60,27 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 20px;
 }
 
-[data-swiper-id="2"].swiper-button-prev {
+[data-swiper-id="2"].swiper-button-prev,
+[data-swiper-id="2"].swiper-button-next 
+ {
 
-    position: relative;
+    position: static ;
     border: 1px solid #FAFAFA80;
     border-radius: 60px;
     padding: 18px;
     width: 68px;
     height: 68px;
+    margin-top: 32px;
 
-  }
-  
-  [data-swiper-id="2"].swiper-button-next {
-    position: relative;
-    border: 1px solid #FAFAFA80;
-    border-radius: 60px;
-    padding: 18px;
-    /* left: 100px; ////////////! */
-    left: 100px;
-    width: 68px;
-    height: 68px;
+
   }
 
   [data-swiper-id="2"].swiper-button-prev::after,
   [data-swiper-id="2"].swiper-button-next::after {
-      display: none; /* Прибираємо дефолтні іконки */
+      display: none;
   }
 
 .review-swiper-prev-icon,
