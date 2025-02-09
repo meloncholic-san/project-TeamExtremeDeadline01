@@ -1,3 +1,5 @@
+import {postData} from "./api";
+
 const url = 'https://portfolio-js.b.goit.study/api/requests';
 
 const form = document.querySelector('.footer-form');
@@ -59,34 +61,21 @@ form.addEventListener('submit', event => {
   }
   
   console.log('Надані дані:', requestData); // Лог перед відправкою
-  
-  fetch(url, {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify(requestData),
-  })
-    .then(response => {
-      console.log('Відповідь сервера:', response);
-      if (!response.ok) {
-        throw new Error(`Помилка HTTP: ${response.status}`);
-      }
-      return response.json();
-    })
 
-    .then(data => {
-      console.log('Succes!:', data);
-      // Додаємо анімацію успішного відправлення
-      openModal('The manager will contact you shortly to discuss further details and opportunities for cooperation. Please stay in touch.');
-      document.querySelector('.footer-modal').classList.add('success-message');
-      form.reset(); // Очищаємо форму після успішного відправлення
-    })
-    .catch(error => {
-      console.error('Invalid email, try again:', error);
-      // Додаємо анімацію помилки
-      openModal('Error sending. Check your details and try again.');
-      document.querySelector('.footer-modal').classList.add('error-message');
-    });
+  try {
+    const data = postData(requestData);
+    console.log('Succes!:', data);
+  
+    openModal('The manager will contact you shortly to discuss further details and opportunities for cooperation. Please stay in touch.');
+    document.querySelector('.footer-modal').classList.add('success-message');
+    form.reset(); 
+  } catch (error) {
+    console.error('Invalid email, try again:', error);
+    openModal('Error sending. Check your details and try again.', false);
+    document.querySelector('.footer-modal').classList.add('error-message');
+  }
 });
+
 
 // Закриття модального вікна на кліку на "X"
 modalClose.addEventListener('click', closeModal);
