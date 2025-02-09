@@ -228,7 +228,6 @@
 
 /* modal menu */
 .footer-backdrop {
-  display: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -254,9 +253,9 @@
 }
 
 .footer-modal {
-  position: absolute;
+  position: fixed;
   text-align: center;
-  top: 50%;
+  top: 75%;
   left: 50%;
   min-width: 343px;
   min-height: 276px;
@@ -265,7 +264,7 @@
   border-radius: 20px;
   background-color: #1c1d20;
   padding: 64px 32px;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms ease-out, opacity 250ms ease-out;
   transform: translate(-50%, -50%);
 }
 
@@ -323,30 +322,35 @@
 }
 
 /* Анімація для успішного відправлення */
-@keyframes successAnimation {
+@keyframes fadeInScale {
   0% {
     opacity: 0;
-    transform: translateY(20px);
+    transform: scale(0.8);
   }
   100% {
     opacity: 1;
-    transform: translateY(0);
+    transform: scale(1);
   }
 }
 
 /* Анімація для помилки */
-@keyframes errorAnimation {
+@keyframes fadeOutScale {
   0% {
-    opacity: 0;
-    transform: translateX(-20px);
-  }
-  50% {
-    transform: translateX(10px);
+    opacity: 1;
+    transform: scale(1);
   }
   100% {
-    opacity: 1;
-    transform: translateX(0);
+    opacity: 0;
+    transform: scale(0.8);
   }
+}
+
+.footer-modal {
+  animation: fadeInScale 0.3s ease-out;
+}
+
+.footer-backdrop:not(.is-open) .footer-modal {
+  animation: fadeOutScale 0.3s ease-in;
 }
 
 .success-message {
