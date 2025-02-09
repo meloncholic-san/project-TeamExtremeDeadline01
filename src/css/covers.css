@@ -1,11 +1,11 @@
 .section-covers {
-  background-image: url(./img/covers/covers-background.webp);
+  background-image: url(../img/covers/covers-background.webp);
   margin-bottom: 64px;
 }
 
 @media screen and (min-resolution: 192dpi) {
   .section-covers {
-    background-image: url(./img/covers/covers-background@2x.webp);
+    background-image: url(../img/covers/covers-background@2x.webp);
   }
 }
 
