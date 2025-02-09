@@ -1,6 +1,8 @@
 
 section, footer {
-  width: 100%; /* За замовчуванням ширина секції займає весь екран */
+  width: 100%;
+  display: flex;
+  justify-content: center; 
 }
 
 .container{

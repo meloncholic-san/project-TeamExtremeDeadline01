@@ -1,19 +1,20 @@
-<footer class="footer">
+<footer class="footer" id="work-together">
   <div class="container">
     <div class="logo-title-container">
       <img
         class="img-logo"
         srcset="
-          ./img/work-together/logo-footer.webp    1x,
-          ./img/work-together/logo-footer@2x.webp 2x
+          ./img/work-together-retina/logo-footer.webp    1x,
+          ./img/work-together-retina/logo-footer@2x.webp 2x
         "
         alt="logo-jefferson"
         width="70"
         height="70"
-        src="./img/work-together/logo-footer.webp"
+        src="./img/work-together-retina/logo-footer.webp"
       />
       <h2 class="title-work-together">
-        Let's <span class="span-accent">work</span> <br />together
+        Let's <span class="span-accent">work</span>
+        <div class="title-bottom">together</div>
       </h2>
     </div>
     <form class="footer-form">
@@ -23,6 +24,7 @@
           id="your-email"
           type="email"
           placeholder="clients@gmail.com"
+          autocomplete="off"
           required
           name="your-email"
           pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
@@ -34,35 +36,45 @@
           id="your-comments"
           type="text"
           placeholder="comments"
+          autocomplete="off"
           required
           name="your-comments"
         />
       </label>
-      <button class="footer-btn-send" type="submit">Send</button>
+      <div class="footer-container-btn">
+        <button class="footer-btn-send" type="submit" data-modal-open>
+          Send
+        </button>
+      </div>
     </form>
     <address class="contacts">
       <ul class="footer-list-contacts">
-        <li class="footer-item-contacts">
+        <li class="footer-item-contacts-mail">
           <a class="footer-link" href="mailto:lloydjefferson@gmail.com"
             >lloydjefferson@gmail.com</a
           >
         </li>
-        <li class="footer-item-contacts">
+        <li class="footer-item-contacts-tel">
           <a class="footer-link" href="tel:+3801111111111"
-            >+38 (011) 1111-11-11</a
+            >+380 11 1111 11 11</a
           >
         </li>
       </ul>
     </address>
   </div>
-  <div class="modal-window" id="modal-window">
-    <div class="modal-content">
-      <span class="close">&times;</span>
-      <h2>Thank you for your interest in cooperation!</h2>
-      <p>
-        The manager will contact you shortly to discuss further details and
-        opportunities for cooperation. Please stay in touch.
-      </p>
+  <!-- modal menu -->
+  <div class="footer-backdrop" data-modal>
+    <div class="footer-modal">
+      <span class="footer-close" data-modal-close>&times;</span>
+      <div class="footer-modal-content-position">
+        <h2 class="footer-modal-title">
+          Thank you for your interest in cooperation!
+        </h2>
+        <p class="footer-modal-text">
+          The manager will contact you shortly to discuss further details and
+          opportunities for cooperation. Please stay in touch.
+        </p>
+      </div>
     </div>
   </div>
 </footer>
