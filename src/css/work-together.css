@@ -44,6 +44,7 @@
 
 .img-logo {
   object-fit: cover;
+  border-radius: 12px;
   width: 44px;
   height: 44px;
 }
@@ -137,10 +138,90 @@ box-shadow: 0px 10px 8px #ed3b44;
 }
 
 @media screen and (min-width: 768px) {
+  .footer {
+    padding-top: 80px;
+    background-image: url(../img/work-together-retina/bg-glass-effect-tabl.jpg);
+  }
+
+  @media screen and (max-width: 1439px) and (min-resolution: 192dpi) {
+    .footer {
+      background-image: url(../img/work-together-retina/bg-glass-effect-tabl@2x.jpg);
+    }
+  }
+
+  .logo-title-container {
+    gap: 20px;
+  }
+
+  .title-work-together {
+    font-size: 64px;
+  }
+
+  .title-bottom {
+    margin-top: 10px;
+    margin-left: -91px;
+  }
+
+  .img-logo {
+    border-radius: 24px;
+    width: 70px;
+    height: 70px;
+  }
+
+  .footer-form {
+    margin-top: 64px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 32px; 
+  }
   
+  .footer-form-input {
+    max-width: 245px;
+  }
+
+  .footer-btn-send {
+    width: 150px;
+    height: 150px;
+  }
+
+  .contacts {
+    margin-top: 18px;
+  }
+
+  .footer-list-contacts {
+    gap: 8px;
+  }
+
+  .footer-link {
+    font-size: 16px;
+    padding: 18px 32px;
+  }
   }
 
   @media screen and (min-width: 1440px) {
+    .footer {
+      padding: 80px 196px 169px;
+     background-image: url(../img/work-together-retina/bg-glass-effect-desc.jpg);
+    }
+
+    @media screen and (min-width: 1440px) and (min-resolution: 192dpi) {
+      .footer {
+        background-image: url(../img/work-together-retina/bg-glass-effect-desc@2x.jpg);
+      }
+    }
+
+    /* .container {
+      padding: 80px 196px 169px;
+    } */
+
+    .footer-form-input {
+      max-width: 390px;
+    }
+    
+    .footer-btn-send {
+      margin-left: 54px;
+    }
     
     }
 
