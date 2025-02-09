@@ -139,6 +139,7 @@
   .footer {
     padding-top: 80px;
     padding-right: 32px;
+    padding-bottom: 169px;
     padding-left: 32px;
     background-image: url(../img/work-together-retina/bg-glass-effect-tabl.jpg);
   }
@@ -200,9 +201,10 @@
 }
 
 @media screen and (min-width: 1440px) {
-  .footer {
+  .footer .container {
     padding-right: 196px;
     padding-left: 196px;
+    margin: 0 auto;
     background-image: url(../img/work-together-retina/bg-glass-effect-desc.jpg);
   }
 
@@ -211,6 +213,8 @@
       background-image: url(../img/work-together-retina/bg-glass-effect-desc@2x.jpg);
     }
   }
+
+  
 
   .footer-form-input {
     max-width: 390px;
