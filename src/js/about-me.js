@@ -1,5 +1,5 @@
 import Accordion from 'accordion-js';
-import sprite from '../img/icons/icon-sprite.svg';
+import sprite from './img/icons/icon-sprite.svg';
 
 import Swiper from 'swiper';
 
