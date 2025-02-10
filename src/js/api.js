@@ -28,7 +28,7 @@ export async function postData(data) {
     });
   
     if (!response.ok) {
-      throw new Error(`Ошибка HTTP: ${response.status}`);
+      throw new Error(`Помилка HTTP: ${response.status}`);
     }
     return response.json();
   }

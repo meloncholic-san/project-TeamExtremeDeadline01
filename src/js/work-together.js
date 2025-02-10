@@ -59,12 +59,9 @@ form.addEventListener('submit', event => {
     openModal('Please fill in all fields.');
     return; // Перериваємо відправку запиту, якщо одне з полів пусте
   }
-  
-  console.log('Надані дані:', requestData); // Лог перед відправкою
 
   try {
     const data = postData(requestData);
-    console.log('Succes!:', data);
   
     openModal('The manager will contact you shortly to discuss further details and opportunities for cooperation. Please stay in touch.');
     document.querySelector('.footer-modal').classList.add('success-message');
