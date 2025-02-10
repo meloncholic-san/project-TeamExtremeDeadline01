@@ -23,6 +23,6 @@ const swiper = new Swiper('.swiper-projects-container', {
   mousewheel: {
     forceToAxis: true,
   },
-  touchEventsTarget: 'wrapper', 
+  touchEventsTarget: 'wrapper',
   createElements: true,
 });
