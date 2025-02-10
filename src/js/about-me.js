@@ -52,10 +52,10 @@ const slider = new Swiper('.swiper-skills-container', {
 
   breakpoints: {
     320: {
-      slidesPerView: 2,
+      slidesPerView: 'auto',
     },
     768: {
-      slidesPerView: 3,
+      slidesPerView: 'auto',
       centeredSlides: true,
     },
     1440: {
@@ -63,6 +63,5 @@ const slider = new Swiper('.swiper-skills-container', {
     },
   },
 });
-
 
 console.log('Slider: ', slider);
