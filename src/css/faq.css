@@ -1,5 +1,4 @@
 
-
 .faq-h2 {
     text-align: left;
     font-weight: 600;
@@ -35,6 +34,7 @@
 
 .faq-link:last-child {
     border-bottom: 1px solid rgba(250, 250, 250, 0.4);
+    margin-bottom: 84px;
 }
 
 .faq-item {
@@ -51,7 +51,6 @@
     font-weight: 500;
     flex: 1;
 }
-
 
 .faq-btn {
     width: 40px;
@@ -96,7 +95,6 @@
     display: flex;
 }
 
-
 .faq-btn use {
     width: 20px;
     height: 20px;
@@ -109,7 +107,6 @@
     width: 20px;
     height: 20px;
 }
-
 
 /* Анімація для відкриття FAQ-панелі */
 .faq-panel {
