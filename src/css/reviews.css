@@ -63,6 +63,7 @@
     gap: 20px;
 }
 
+
 [data-swiper-id="2"].swiper-button-prev,
 [data-swiper-id="2"].swiper-button-next 
  {
@@ -74,7 +75,7 @@
     width: 68px;
     height: 68px;
     margin-top: 32px;
-
+    background-color: transparent;
 
   }
 
@@ -92,4 +93,13 @@
     fill: white;
     display: block;
     position: absolute;
+}
+
+
+body .swiper-button-prev svg,  
+body .swiper-button-next svg {  
+  width: 32px !important;  
+  height: 32px !important;  
+  object-fit: contain !important;  
+  background-color: transparent !important;  
 }
