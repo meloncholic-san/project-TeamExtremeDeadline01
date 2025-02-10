@@ -1,4 +1,5 @@
-/* @import 'swiper/swiper-bundle.css'; */
+@import 'swiper/css';
+@import 'swiper/css/navigation';
 
 .visually-hidden {
   position: absolute;
@@ -21,8 +22,6 @@
   padding-top: 64px;
   padding-bottom: 64px;
   transition: all 0.3s ease;
-  /* height: auto;
-  align-items: center; */
 }
 
 .about-intro {
@@ -76,7 +75,6 @@
   .about-image-box {
     width: 704px;
     height: 700px;
-    /* padding: 64px; */
   }
 
   .about-description {
@@ -90,7 +88,6 @@
     flex-direction: row;
   }
 }
-
 
 .about-list {
   display: flex;
@@ -183,7 +180,6 @@
 
   .about-list-item:nth-of-type(1) .about-list-content {
     gap: 16px;
-
   }
 }
 
@@ -200,64 +196,36 @@
 
   .about-list-item-description {
     margin-left: 50%;
-    /* word-wrap: break-word; */
     width: 612px;
   }
 
   .about-list-item:nth-of-type(3) .about-list-item-description {
     width: 425px;
   }
-
 }
-
 
 .swiper-skills-container {
   display: flex;
   justify-content: space-between;
-  /* gap: 20px; */
-  align-self: flex-start;
-  max-width: 100%;
-  /* overflow: hidden; */
-  /* flex-shrink: 0; */
-  width: auto;
-  position: relative;
-
+  overflow: hidden;
+  align-items: center;
 }
-
-/* 
-@media screen and (min-width: 375px) {
-  .swiper-container {
-    min-width: 260px;
-  }
-} */
 
 .skills-list {
   display: flex;
-  justify-content: flex-start;
+  width: 260px;
   overflow: hidden;
-  /* width: 80%; */
+  margin: 0;
+  padding: 0;
   flex-shrink: 0;
-  width: auto;
-  max-width: 100%;
-  flex-grow: 1;
-
-}
-
-@media screen and (min-width: 1440px) {
-  .skills-list {
-    width: 100%;
-    /* Уникайте розтягування списку */
-    justify-content: flex-start;
-    /* Слайди починаються з лівого краю */
-  }
 }
 
 .skills-list-item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 130px;
-  height: 130px;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  width: 130px !important;
+  height: 130px !important;
   border-radius: 50%;
   font-size: 16px;
   letter-spacing: -0.02em;
@@ -271,29 +239,25 @@
   flex-shrink: 0 !important;
 }
 
-/* Перший елемент (червоний фон за замовчуванням) */
-/* .skills-list-item:nth-of-type(1) {
-  background-color: #ED3B44;
-  border: none;
-} */
-
-.about-section .swiper-slide-active {
+.skills-list-item.swiper-slide-active {
   background-color: #ED3B44;
   border: none;
 }
 
-/* .skills-list-item:active,
-.skills-list-item:hover {
-  background-color: #ED3B44;
-  border: none;
-} */
-
 @media screen and (min-width: 768px) {
+  .swiper-skills-container {
+    gap: 0;
+  }
+
+  .skills-list {
+    width: 600px;
+  }
+
   .skills-list-item {
-    width: 200px;
-    height: 200px;
-    font-size: 20px;
-    line-height: 1.2;
+    width: 200px !important;
+    height: 200px !important;
+    font-size: 20px !important;
+    line-height: 1.2 !important;
   }
 }
 
@@ -301,20 +265,17 @@
   .swiper-skills-container {
     padding: 0 32px;
   }
+
+  .skills-list {
+    width: 1200px;
+    overflow: hidden;
+  }
 }
 
-/* .skills-slider-btn {
-  display: inline-block;
-} */
-
 .skills-slider-btn {
-  position: absolute;
-  top: 50%;
-  right: 10px;
-  transform: translateY(-50%);
   width: 40px;
   height: 40px;
-  display: flex;
+  display: flex !important;
   justify-content: center;
   align-items: center;
   background-color: rgba(0, 0, 0, 0.2);
@@ -325,21 +286,16 @@
   transition: all 0.3s ease;
 }
 
-/* SVG стрілка всередині кнопки */
 .skills-slider-btn .swiper-pagination {
   width: 28px;
   height: 28px;
   fill: rgba(255, 255, 255, 0.4);
 }
 
-/* Ховер-ефект для кнопки */
 .skills-slider-btn:hover {
-  /* Червоний фон при наведенні */
-  transform: translateY(-50%) scale(1.1);
-  /* Збільшення кнопки при ховері */
+  transform: scale(1.1);
 }
 
 .skills-slider-btn:hover .swiper-pagination {
-  fill: #fff;
-  /* Стрілка залишається білою */
+  fill: rgba(255, 255, 255, 0.4);
 }
