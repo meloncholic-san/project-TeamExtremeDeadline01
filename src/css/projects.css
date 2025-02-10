@@ -1,4 +1,4 @@
-.projects-section {
+/* .projects-section {
     background-color: #1c1d20;
 }
 
@@ -19,7 +19,7 @@
     overflow: hidden;
     list-style: none;
     padding: 0;
-    /* Fix of Webkit flickering */
+
     z-index: 1;
     display: block;
 }
@@ -201,4 +201,4 @@
     .projects-list-item-sec-part {
         padding: 120px 37px;
     }
-}
+} */
