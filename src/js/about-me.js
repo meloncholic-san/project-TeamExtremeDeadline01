@@ -2,6 +2,7 @@ import Accordion from 'accordion-js';
 import sprite from '../img/icons/icon-sprite.svg';
 
 import Swiper from 'swiper';
+import { Navigation } from 'swiper/modules';
 
 document.addEventListener('DOMContentLoaded', function () {
   new Accordion('.about-list', {
@@ -35,6 +36,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 const slider = new Swiper('.swiper-skills-container', {
+  modules: [Navigation],
   loop: true,
   oneWayMovement: true,
   edgeSwipeDetection: true,
@@ -59,9 +61,9 @@ const slider = new Swiper('.swiper-skills-container', {
       centeredSlides: true,
     },
     1440: {
+      slidesPerGroup: 1,
       slidesPerView: 6,
+      centeredSlides: false,
     },
   },
 });
-
-console.log('Slider: ', slider);
