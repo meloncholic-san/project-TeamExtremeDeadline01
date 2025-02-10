@@ -2,7 +2,7 @@ console.log("FAQ script loaded!");
 
 import Accordion from "accordion-js";
 import "accordion-js/dist/accordion.min.css";
-import sprite from "./img/icons/icon-sprite.svg";
+import sprite from "../img/icons/icon-sprite.svg";
 
 document.addEventListener("DOMContentLoaded", function () {
     new Accordion(".faq-list", {
