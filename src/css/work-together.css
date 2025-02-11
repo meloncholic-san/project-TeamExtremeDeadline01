@@ -5,7 +5,6 @@
   background-repeat: no-repeat;
   background-size: 25% 100%;
   background-position: right bottom;
-  justify-self: center;
   color: #fff;
 }
 
@@ -142,6 +141,7 @@
   .footer {
     width: 768px;
     background-image: url(../img/work-together-retina/bg-glass-effect-tabl.jpg);
+    justify-self: center;
   }
 
   @media screen and (max-width: 1439px) and (min-resolution: 192dpi) {
@@ -260,7 +260,7 @@
 .footer-modal {
   position: fixed;
   text-align: center;
-  top: 68%;
+  top: 79%;
   left: 50%;
   min-width: 343px;
   padding: 64px 32px;
@@ -375,8 +375,8 @@
 
 @media screen and (min-width: 768px) {
   .footer-modal {
-    top: 62%;
-    left: 55%;
+    top: 74%;
+    left: 52%;
     min-width: 492px;
     padding: 64px;
   }
@@ -389,7 +389,7 @@
 
 @media screen and (min-width: 1440px) {
   .footer-modal {
-    top: 61%;
+    top: 76%;
     left: 54%;
   }
 }
