@@ -13,6 +13,7 @@ const commentsInput = document.querySelector('#your-comments');
 function openModal(message) {
   modalText.textContent = message;
   modal.classList.add('is-open');
+  document.body.style.overflow = 'hidden'; // Блокуємо прокручування
 
  // Додаємо обробник закриття Esc
   document.addEventListener('keydown', closeModalOnEsc);
@@ -21,6 +22,7 @@ function openModal(message) {
 // Функція для закриття модального вікна
 function closeModal() {
   modal.classList.remove('is-open');
+  document.body.style.overflow = ''; // Розблокуємо прокручування
   document.removeEventListener('keydown', closeModalOnEsc);
 }
 
