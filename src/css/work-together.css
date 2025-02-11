@@ -1,8 +1,10 @@
 .footer {
   min-width: 375px;
+  height: 100vh;
   background-color: #1c1d20;
   background-image: url(../img/work-together-retina/bg-glass-effect-mobile.jpg);
   background-repeat: no-repeat;
+  overflow: hidden;
   background-size: 25% 100%;
   background-position: right bottom;
   color: #fff;
