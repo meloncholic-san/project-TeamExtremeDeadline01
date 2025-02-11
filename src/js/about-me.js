@@ -68,3 +68,11 @@ const slider = new Swiper('.swiper-skills-container', {
     },
   },
 });
+
+document.querySelectorAll('.skills-list-item').forEach(item => {
+  item.addEventListener('click', function () {
+    if (!item.classList.contains('swiper-slide-active')) {
+      slider.slideNext();
+    }
+  });
+});
