@@ -9,6 +9,7 @@ const modalText = document.querySelector('.footer-modal-text');
 const emailInput = document.querySelector('#your-email');
 const commentsInput = document.querySelector('#your-comments');
 
+
 // Функція для відображення модального вікна
 function openModal(message) {
   modalText.textContent = message;
