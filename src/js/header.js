@@ -6,21 +6,39 @@ const modalNav = document.querySelector('.header-modal-menu-list');
 const headerMenu = document.querySelector(".header-menu-btn");
 const headerMenuNav = document.querySelector(".header-menu-list.header-hidden");
 
-burgerIcon.addEventListener("click", () => {
+let resizeTimeout;
+
+function handleModalOpen () {
   headerModal.classList.add("active");
   document.body.classList.add("overflow-hidden");
 
   burgerIcon.classList.add("header-icon-hidden");
   closeModal.classList.add("header-icon-visible");
-});
 
-closeModal.addEventListener("click", () => {
+  window.addEventListener('resize', handleResize);
+}
+
+function handleModalClose () {
   headerModal.classList.remove("active");
   document.body.classList.remove("overflow-hidden");
 
   burgerIcon.classList.remove("header-icon-hidden");
   closeModal.classList.remove("header-icon-visible");
-});
+
+  window.removeEventListener('resize', handleResize);
+}
+
+function handleResize() {
+  clearTimeout(resizeTimeout);
+  resizeTimeout = setTimeout(() => {
+    if (window.innerWidth > 375) {
+      handleModalClose();
+    }
+  }, 200); 
+}
+
+burgerIcon.addEventListener("click", handleModalOpen);
+closeModal.addEventListener("click", handleModalClose);
 
 headerOrderButton.addEventListener("click", () => {
   headerModal.classList.remove("active");

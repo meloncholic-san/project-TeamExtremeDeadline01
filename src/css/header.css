@@ -48,7 +48,7 @@
   padding-left: 16px;
   padding-right: 16px;
   padding-bottom: 64px;
-
+  background-repeat: no-repeat;
 }
   /* @media (min-resolution: 192dpi) {
     .header-modal {
