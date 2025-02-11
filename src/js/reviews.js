@@ -1,6 +1,3 @@
-console.log("reviews script loaded!");
-
-
 import Swiper from "swiper";
 import "swiper/css";
 import "swiper/css/navigation";
