@@ -20,9 +20,10 @@ document.addEventListener('DOMContentLoaded', function () {
   const items = document.querySelectorAll('.about-list-item');
   items.forEach(item => {
     const button = item.querySelector('.about-toggle-btn');
+    const header = item.querySelector('.about-list-header');
     const content = item.querySelector('.about-list-content');
 
-    button.addEventListener('click', function () {
+    header.addEventListener('click', function () {
       const isActive = item.classList.toggle('is-active');
       toggleIcon(button, isActive);
 
