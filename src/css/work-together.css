@@ -375,7 +375,7 @@
 
 @media screen and (min-width: 768px) {
   .footer-modal {
-    top: 74%;
+    top: 59%;
     left: 52%;
     min-width: 492px;
     padding: 64px;
@@ -389,7 +389,7 @@
 
 @media screen and (min-width: 1440px) {
   .footer-modal {
-    top: 76%;
+    top: 81%;
     left: 54%;
   }
 }
