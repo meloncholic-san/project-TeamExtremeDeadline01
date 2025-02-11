@@ -5,6 +5,7 @@
   background-repeat: no-repeat;
   background-size: 25% 100%;
   background-position: right bottom;
+  justify-self: center;
   color: #fff;
 }
 
@@ -16,7 +17,6 @@
 
 .footer .container {
   margin: 0 auto;
-  padding: 32px 16px;
 }
 
 .logo-title-container {
@@ -140,6 +140,7 @@
 
 @media screen and (min-width: 768px) {
   .footer {
+    width: 768px;
     background-image: url(../img/work-together-retina/bg-glass-effect-tabl.jpg);
   }
 
@@ -151,9 +152,7 @@
 
   .footer .container {
     padding-top: 80px;
-    padding-right: 32px;
     padding-bottom: 169px;
-    padding-left: 32px;
   }
 
   .logo-title-container {
@@ -208,6 +207,7 @@
 
 @media screen and (min-width: 1440px) {
   .footer {
+    width: 1440px;
     background-image: url(../img/work-together-retina/bg-glass-effect-desc.jpg);
   }
 
