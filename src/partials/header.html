@@ -7,26 +7,44 @@
           ./img/header/jefferson.webp    1x,
           ./img/header/jefferson@2x.webp 2x
         "
-        src="../img/header/jefferson.webp"
+        src="./img/header/jefferson.webp"
         alt="jefferson"
       />
 
       <p class="header-logo-text">jefferson*</p>
     </div>
 
-    <div class="header-menu">
+    <div class="header-menu header-hidden">
       <button class="header-menu-btn">Menu</button>
-      <nav class="header-menu-list">
+      <nav class="header-menu-list header-hidden">
         <a href="#about-me" class="header-menu-link">About me</a>
         <a href="#benefits" class="header-menu-link">Benefits</a>
         <a href="#projects" class="header-menu-link">Projects</a>
         <a href="#faq" class="header-menu-link">FAQ</a>
       </nav>
     </div>
-    <a href="#work-together" class="header-btn-order">Order the project</a>
+    <a href="#work-together" class="header-btn-order header-hidden">Order the project</a>
+    <!-- <button class="header-burger-button"> -->
+      <svg class="header-menu-img">
+        <use href="./img/icons/icon-sprite.svg#icon-menu-05"></use>
+      </svg>
+    <!-- </button> -->
 
-    <svg class="header-menu-img">
-      <use href="./img/icons/icon-sprite.svg#icon-menu-05"></use>
-    </svg>
   </div>
+
+  <div class="header-modal modal-hidden">
+    <div class="header-modal-wrapper">
+        <svg class="header-menu-close-img">
+          <use href="./img/icons/icon-sprite.svg#icon-x"></use>
+        </svg>
+        <nav class="header-modal-menu-list">
+          <a href="#about-me" class="header-modal-menu-link">About me</a>
+          <a href="#benefits" class="header-modal-menu-link">Benefits</a>
+          <a href="#projects" class="header-modal-menu-link">Projects</a>
+          <a href="#faq" class="header-modal-menu-link">FAQ</a>
+        </nav>
+        <a href="#work-together" class="header-modal-btn-order">Order the project</a>
+    </div>
+  </div>
+
 </header>
