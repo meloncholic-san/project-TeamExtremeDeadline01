@@ -49,13 +49,14 @@
   padding-right: 16px;
   padding-bottom: 64px;
   background-repeat: no-repeat;
+  background-size: cover
 }
-  @media (min-width: 375px)  {
+  /* @media (min-width: 375px)  {
     .header-modal {
       left: calc(50vw - 172px - 16px);
     }
   }
-   
+    */
 
 
 .header-modal-wrapper{
