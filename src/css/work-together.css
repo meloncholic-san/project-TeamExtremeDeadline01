@@ -260,7 +260,7 @@
 .footer-modal {
   position: fixed;
   text-align: center;
-  top: 54%;
+  top: 50%;
   left: 50%;
   min-width: 343px;
   padding: 64px 32px;
@@ -375,7 +375,7 @@
 
 @media screen and (min-width: 768px) {
   .footer-modal {
-    top: 56%;
+    /* top: 56%; */
     left: 51%;
     min-width: 492px;
     padding: 64px;
@@ -389,7 +389,7 @@
 
 @media screen and (min-width: 1440px) {
   .footer-modal {
-    top: 75%;
+    /* top: 70%; */
     left: 54%;
   }
 }
