@@ -132,7 +132,7 @@
 }
 
 .about-list-item.is-active .about-list-content {
-  max-height: 500px;
+  max-height: 600px;
   padding: 0;
   margin-bottom: 12px;
 }
