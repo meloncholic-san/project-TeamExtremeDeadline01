@@ -1,3 +1,22 @@
+@font-face {
+  font-family: "Inter Tight";
+  src: url("/fonts/InterTight-Regular.woff2") format("woff2"),
+       url("/fonts/InterTight-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter Tight";
+  src: url("/fonts/InterTight-Italic.woff2") format("woff2"),
+       url("/fonts/InterTight-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+
 :root {
   font-family: "Inter Tight", sans-serif;
   font-weight: 500;
