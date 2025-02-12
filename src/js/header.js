@@ -31,10 +31,10 @@ function handleModalClose () {
 function handleResize() {
   clearTimeout(resizeTimeout);
   resizeTimeout = setTimeout(() => {
-    if (window.innerWidth > 375) {
+    if (window.innerWidth >= 768) {
       handleModalClose();
     }
-  }, 200); 
+  }, 1); 
 }
 
 burgerIcon.addEventListener("click", handleModalOpen);

@@ -2,9 +2,10 @@
     padding-bottom: 64px;
     background-color: #1c1d20;
 }
-.benefits{
-    margin-bottom: 96px;
-}
+/* .benefits {
+    margin-bottom: 64px;
+} */
+
 
 .benefits-header {
     font-family: 'Inter Tight', sans-serif;
@@ -98,6 +99,9 @@
 
 /* Styles for Tablet devices */
 @media only screen and (min-width: 768px) {
+    .benefits {
+            margin-bottom: 96px;
+        }
     .container-benefits {
         padding: 0 32px;
     }
@@ -128,5 +132,8 @@
 @media only screen and (min-width: 1440px) {
     .container-benefits{
         display: flex;
+    }
+    .benefits{
+        margin-bottom: 164px;
     }
 }
