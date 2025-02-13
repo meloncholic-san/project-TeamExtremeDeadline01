@@ -207,6 +207,7 @@
     text-align: center;
     user-select: none;
     text-decoration: underline white;
+    font-family: "Inter Tight";
   }
     .header-menu-btn:hover,
     .header-menu-btn:focus {
